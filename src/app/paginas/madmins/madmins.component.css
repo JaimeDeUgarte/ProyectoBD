@@ -1,0 +1,132 @@
+/* Estilos para el contenedor de registro */
+.signup-container {
+    max-width: 400px; /* Establece el ancho máximo del contenedor en 400px */
+    margin: 0 auto; /* Centra horizontalmente el contenedor dentro de su padre */
+    padding: 20px; /* Agrega un espacio interno de 20px alrededor del contenido del contenedor */
+    background-color: #2533af; /* Establece el color de fondo del contenedor en #2533af */
+    border-radius: 5px; /* Agrega esquinas redondeadas al contenedor */
+  }
+  
+  .signup-container h1 {
+    text-align: center; /* Centra horizontalmente el texto dentro del contenedor */
+    font-size: 24px; /* Establece el tamaño de fuente del encabezado en 24px */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20px al encabezado */
+  }
+  
+  .signup-container form label {
+    display: block; /* Establece los elementos <label> como bloques, lo que los hace ocupar una línea separada */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10px a los elementos <label> */
+  }
+  
+  .signup-container form input[type="text"],
+  .signup-container form input[type="password"] {
+    width: 100%; /* Establece el ancho de los campos de entrada de texto en 100% del contenedor */
+    padding: 8px; /* Agrega un espacio interno de 8px alrededor del contenido de los campos de entrada */
+    border: 1px solid #ccc; /* Establece un borde de 1px sólido de color #ccc para los campos de entrada */
+    border-radius: 4px; /* Agrega esquinas redondeadas a los campos de entrada */
+  }
+  
+  .signup-container form .submit-wrapper {
+    text-align: center; /* Centra horizontalmente el contenido del contenedor de envío */
+    margin-top: 20px; /* Agrega un margen superior de 20px al contenedor de envío */
+  }
+  
+  .signup-container form button {
+    padding: 10px 20px; /* Agrega un espacio interno de 10px en la parte superior e inferior y 20px en los lados del botón */
+    background-color: #4CAF50; /* Establece el color de fondo del botón en #4CAF50 */
+    color: #fff; /* Establece el color del texto del botón en blanco */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 4px; /* Agrega esquinas redondeadas al botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón sobre el botón */
+  }
+  
+  .signup-container form button[disabled] {
+    opacity: 0.6; /* Reduce la opacidad del botón a 0.6 cuando está desactivado */
+    cursor: not-allowed; /* Cambia el cursor a no permitido cuando el botón está desactivado */
+  }
+  
+  .signup-container form .fa {
+    margin-right: 5px; /* Agrega un margen derecho de 5px a los iconos con clase .fa */
+  }
+  
+  .signup-container form .fa-spin {
+    animation: fa-spin 2s infinite linear; /* Aplica una animación de giro a los iconos con clase .fa-spin */
+  }
+  
+  /* Animación de giro */
+  @keyframes fa-spin {
+    0% {
+      transform: rotate(0deg); /* Establece la rotación inicial en 0 grados */
+    }
+    100% {
+      transform: rotate(360deg); /* Establece la rotación final en 360 grados (una vuelta completa) */
+    }
+  }
+  
+  /* Estilos para el contenedor de búsqueda */
+  .search-container {
+    margin-bottom: 20px; /* Agrega un margen inferior de 20px al contenedor de búsqueda */
+  }
+  
+  .search-container input {
+    width: 300px; /* Establece el ancho del campo de entrada de búsqueda en 300px */
+    padding: 10px; /* Agrega un espacio interno de 10px alrededor del contenido del campo de entrada */
+    font-size: 16px; /* Establece el tamaño de fuente del campo de entrada en 16px */
+  }
+  
+  /* Estilos para la lista de usuarios */
+  .user-list ul {
+    list-style-type: none; /* Elimina los estilos de lista por defecto */
+    padding: 0; /* Elimina el espacio interno en la lista de usuarios */
+  }
+  
+  .user-list li {
+    display: flex; /* Establece los elementos <li> como elementos flexibles */
+    justify-content: space-between; /* Distribuye el espacio disponible entre los elementos en ambos extremos */
+    align-items: center; /* Centra verticalmente los elementos en el eje Y */
+    padding: 10px; /* Agrega un espacio interno de 10px alrededor del contenido de cada elemento <li> */
+    background-color: #333; /* Establece el color de fondo de cada elemento <li> en #333 */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10px a cada elemento <li> */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón sobre cada elemento <li> */
+  }
+  
+  /* Estilos para las acciones del usuario */
+  .user-actions button {
+    background-color: #555; /* Establece el color de fondo del botón de acciones del usuario en #555 */
+    color: #fff; /* Establece el color del texto del botón de acciones del usuario en blanco */
+    padding: 5px 10px; /* Agrega un espacio interno de 5px en la parte superior e inferior y 10px en los lados del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 4px; /* Agrega esquinas redondeadas al botón */
+    margin-left: 10px; /* Agrega un margen izquierdo de 10px al botón de acciones del usuario */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón sobre el botón */
+  }
+  
+  .user-actions button:hover {
+    background-color: #777; /* Cambia el color de fondo del botón de acciones del usuario a #777 al pasar el ratón sobre él */
+  }
+  
+  /* Estilos genéricos para formularios */
+  form label {
+    display: block; /* Establece los elementos <label> como bloques, lo que los hace ocupar una línea separada */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10px a los elementos <label> */
+  }
+  
+  form input {
+    padding: 10px; /* Agrega un espacio interno de 10px alrededor del contenido de los campos de entrada */
+    font-size: 16px; /* Establece el tamaño de fuente de los campos de entrada en 16px */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10px a los campos de entrada */
+  }
+  
+  form button {
+    background-color: #555; /* Establece el color de fondo del botón en #555 */
+    color: #fff; /* Establece el color del texto del botón en blanco */
+    padding: 10px 20px; /* Agrega un espacio interno de 10px en la parte superior e inferior y 20px en los lados del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 4px; /* Agrega esquinas redondeadas al botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón sobre el botón */
+  }
+  
+  form button:hover {
+    background-color: #777; /* Cambia el color de fondo del botón a #777 al pasar el ratón sobre él */
+  }
+  

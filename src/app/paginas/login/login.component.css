@@ -1,0 +1,121 @@
+.container {
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    justify-content: center; /* Centra horizontalmente los elementos hijos dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos hijos dentro del contenedor */
+    height: 100vh; /* Establece la altura del contenedor al 100% del viewport (altura de la ventana) */
+  }
+  
+  .login-container {
+    font-family: 'Roboto', sans-serif; /* Define la fuente de texto para el contenedor */
+    width: 400px; /* Establece el ancho del contenedor a 400 píxeles */
+    padding: 20px; /* Establece un espacio interno de 20 píxeles dentro del contenedor */
+    border: 1px solid #ccc; /* Establece un borde sólido de 1 píxel con color #ccc */
+    border-radius: 5px; /* Establece un borde redondeado de 5 píxeles */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra al contenedor */
+  }
+  
+  form {
+    display: flex; /* Establece el formulario como un contenedor flexible con dirección de columna */
+    flex-direction: column; /* Establece la dirección de los elementos del formulario a columna */
+  }
+  
+  label {
+    margin-bottom: 5px; /* Agrega un margen inferior de 5 píxeles al elemento de etiqueta */
+  }
+  
+  input {
+    padding: 10px; /* Establece un espacio interno de 10 píxeles para los elementos de entrada */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10 píxeles al elemento de entrada */
+    border-radius: 5px; /* Establece un borde redondeado de 5 píxeles para los elementos de entrada */
+    border: 1px solid #ccc; /* Establece un borde sólido de 1 píxel con color #ccc para los elementos de entrada */
+  }
+  
+  button {
+    cursor: pointer; /* Cambia el cursor del mouse al puntero cuando se pasa por encima del botón */
+    font-size: 18px; /* Establece el tamaño de fuente del botón a 18 píxeles */
+    letter-spacing: 2px; /* Establece el espaciado entre caracteres del botón a 2 píxeles */
+    text-transform: uppercase; /* Convierte el texto del botón a mayúsculas */
+    display: inline-block; /* Establece el botón como un elemento en línea con flujo de texto */
+    text-align: center; /* Centra el texto del botón horizontalmente */
+    font-weight: bold; /* Establece el grosor de la fuente del botón a negrita */
+    padding: 0.7em 2em; /* Establece el relleno del botón */
+    border: 3px solid #0f49c7; /* Establece un borde sólido de 3 píxeles con color #0f49c7 */
+    border-radius: 2px; /* Establece un borde redondeado de 2 píxeles para el botón */
+    position: relative; /* Establece la posición del botón como relativa */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra al botón */
+    color: #0f49c7; /* Establece el color del texto del botón */
+    text-decoration: none; /* Elimina cualquier decoración de texto en el botón */
+    transition: 0.3s ease all; /* Agrega una transición suave a todas las propiedades del botón */
+    z-index: 1; /* Establece la posición z del botón */
+  }
+  
+  button:before {
+    transition: 0.5s all ease; /* Agrega una transición suave a todas las propiedades del pseudo-elemento ::before */
+    position: absolute; /* Establece la posición del pseudo-elemento ::before como absoluta */
+    top: 0; /* Establece la posición superior del pseudo-elemento ::before */
+    left: 50%; /* Establece la posición izquierda del pseudo-elemento ::before */
+    right: 50%; /* Establece la posición derecha del pseudo-elemento ::before */
+    bottom: 0; /* Establece la posición inferior del pseudo-elemento ::before */
+    opacity: 0; /* Establece la opacidad del pseudo-elemento ::before a 0 */
+    content: ''; /* Establece el contenido del pseudo-elemento ::before como vacío */
+    background-color: #0f49c7; /* Establece el color de fondo del pseudo-elemento ::before */
+    z-index: -1; /* Establece la posición z del pseudo-elemento ::before */
+  }
+  
+  button:hover, button:focus {
+    color: white; /* Cambia el color del texto del botón a blanco al pasar el mouse o enfocar */
+  }
+  
+  button:hover:before, button:focus:before {
+    transition: 0.5s all ease; /* Agrega una transición suave a todas las propiedades del pseudo-elemento ::before al pasar el mouse o enfocar */
+    left: 0; /* Establece la posición izquierda del pseudo-elemento ::before a 0 */
+    right: 0; /* Establece la posición derecha del pseudo-elemento ::before a 0 */
+    opacity: 1; /* Establece la opacidad del pseudo-elemento ::before a 1 */
+  }
+  
+  button:active {
+    transform: scale(0.9); /* Escala el botón al 90% de su tamaño original cuando se presiona */
+  }
+  
+  .register-button {
+    cursor: pointer; /* Cambia el cursor del mouse al puntero cuando se pasa por encima del botón */
+    font-size: 18px; /* Establece el tamaño de fuente del botón a 18 píxeles */
+    letter-spacing: 2px; /* Establece el espaciado entre caracteres del botón a 2 píxeles */
+    text-transform: uppercase; /* Convierte el texto del botón a mayúsculas */
+    display: inline-block; /* Establece el botón como un elemento en línea con flujo de texto */
+    text-align: center; /* Centra el texto del botón horizontalmente */
+    font-weight: bold; /* Establece el grosor de la fuente del botón a negrita */
+    padding: 0.7em 2em; /* Establece el relleno del botón */
+    border: none; /* Elimina el borde del botón */
+    background-color: #ffae44; /* Establece el color de fondo del botón */
+    color: #fff; /* Establece el color del texto del botón a blanco */
+    border-radius: 2px; /* Establece un borde redondeado de 2 píxeles para el botón */
+    position: relative; /* Establece la posición del botón como relativa */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra al botón */
+    text-decoration: none; /* Elimina cualquier decoración de texto en el botón */
+    transition: 0.3s ease all; /* Agrega una transición suave a todas las propiedades del botón */
+    z-index: 1; /* Establece la posición z del botón */
+    margin-top: 10px; /* Agrega un margen superior de 10 píxeles al botón */
+  }
+  
+  .register-button:hover, .register-button:focus {
+    background-color: #c78d0f; /* Cambia el color de fondo del botón al pasar el mouse o enfocar */
+  }
+  
+  .register-button:active {
+    transform: scale(0.9); /* Escala el botón al 90% de su tamaño original cuando se presiona */
+  }
+  
+  .register-button:before {
+    transition: 0.5s all ease; /* Agrega una transición suave a todas las propiedades del pseudo-elemento ::before */
+    position: absolute; /* Establece la posición del pseudo-elemento ::before como absoluta */
+    top: 0; /* Establece la posición superior del pseudo-elemento ::before */
+    left: 50%; /* Establece la posición izquierda del pseudo-elemento ::before */
+    right: 50%; /* Establece la posición derecha del pseudo-elemento ::before */
+    bottom: 0; /* Establece la posición inferior del pseudo-elemento ::before */
+    opacity: 0; /* Establece la opacidad del pseudo-elemento ::before a 0 */
+    content: ''; /* Establece el contenido del pseudo-elemento ::before como vacío */
+    background-color: #f8aa03; /* Establece el color de fondo del pseudo-elemento ::before */
+    z-index: -1; /* Establece la posición z del pseudo-elemento ::before */
+  }
+  

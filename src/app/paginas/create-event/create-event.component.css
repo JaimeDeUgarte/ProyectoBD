@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente de texto para todo el cuerpo del documento */
+    background-color: #f0f0f0; /* Establece el color de fondo del cuerpo del documento */
+    color: #333; /* Establece el color de texto para todo el cuerpo del documento */
+  }
+  
+  form {
+    max-width: 400px; /* Establece el ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 20px; /* Añade un espacio interno alrededor del formulario */
+    background-color: #fff; /* Establece el color de fondo del formulario */
+    border-radius: 5px; /* Aplica bordes redondeados al formulario */
+  }
+  
+  label {
+    color: black; /* Establece el color de texto para las etiquetas */
+    display: block; /* Hace que las etiquetas sean elementos de bloque */
+    font-weight: bold; /* Establece la negrita para las etiquetas */
+    margin-bottom: 5px; /* Añade un margen inferior a las etiquetas */
+  }
+  
+  select,
+  input[type="text"],
+  input[type="datetime-local"] {
+    width: 100%; /* Establece el ancho al 100% para que ocupen todo el espacio disponible */
+    padding: 8px; /* Añade un espacio interno a los elementos de entrada de texto */
+    border: 1px solid #ccc; /* Establece un borde de 1 píxel con color gris claro */
+    border-radius: 4px; /* Aplica bordes redondeados a los elementos de entrada de texto */
+    box-sizing: border-box; /* Incluye el tamaño del borde en el ancho total del elemento */
+    margin-bottom: 10px; /* Añade un margen inferior a los elementos de entrada de texto */
+  }
+  
+  button {
+    background-color: #0f49c7; /* Establece el color de fondo para el botón */
+    color: white; /* Establece el color de texto para el botón */
+    padding: 10px 20px; /* Añade un espacio interno alrededor del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 4px; /* Aplica bordes redondeados al botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-weight: bold; /* Establece la negrita para el texto del botón */
+  }
+  
+  button:hover {
+    background-color: #0b3c94; /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+  }
+  
+  .error-message {
+    color: red; /* Establece el color de texto para los mensajes de error */
+    font-size: 14px; /* Establece el tamaño de fuente para los mensajes de error */
+    margin-top: 5px; /* Añade un margen superior a los mensajes de error */
+  }
+  

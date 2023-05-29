@@ -1,0 +1,21 @@
+<div class="signup-container">
+    <h1>Registrar Admin</h1> <!-- Título del formulario -->
+    <form [formGroup]="miFormulario" (ngSubmit)="onSubmit()"> <!-- Formulario con enlace a un grupo de formularios y un controlador de envío -->
+      <label>
+        Email:
+        <input type="text" formControlName="email"> <!-- Campo de entrada para el correo electrónico con enlace a un controlador de formulario -->
+      </label>
+      <label>
+        Password:
+        <input type="password" id="password" formControlName="password" required> <!-- Campo de entrada para la contraseña con enlace a un controlador de formulario y requerido -->
+      </label>
+      <div class="submit-wrapper"> <!-- Contenedor para el botón de envío -->
+        <button [disabled]="isLoading || isSuccess" type="submit"> <!-- Botón de envío con enlace a variables de estado -->
+          <span *ngIf="!isLoading && !isSuccess">Enviar</span> <!-- Mostrar "Enviar" cuando no está cargando ni tiene éxito -->
+          <span *ngIf="isLoading"><i class="fa fa-spinner fa-spin"></i></span> <!-- Mostrar un icono de carga cuando está cargando -->
+          <span *ngIf="isSuccess"><i class="fa fa-check"></i></span> <!-- Mostrar un icono de verificación cuando tiene éxito -->
+        </button>
+      </div>
+    </form>
+  </div>
+  

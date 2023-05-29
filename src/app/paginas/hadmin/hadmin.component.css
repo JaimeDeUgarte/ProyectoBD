@@ -1,0 +1,77 @@
+/* Estilos para el cuerpo del documento */
+body {
+    margin: 0; /* Establece el margen exterior del cuerpo a 0 */
+    padding: 0; /* Establece el relleno interior del cuerpo a 0 */
+    font-family: Arial, sans-serif; /* Establece la fuente a Arial o una fuente genérica sans-serif */
+  }
+  
+  /* Estilos para el elemento HTML */
+  html {
+    height: 100%; /* Establece la altura del elemento HTML al 100% */
+  }
+  
+  /* Estilos para la barra lateral */
+  .sidebar {
+    width: 200px; /* Establece el ancho de la barra lateral a 200px */
+    background-color: #0f49c7; /* Establece el color de fondo de la barra lateral a #0f49c7 */
+    color: #fff; /* Establece el color de texto de la barra lateral a blanco */
+    height: 100vh; /* Establece la altura de la barra lateral al 100% de la altura de la ventana */
+    position: fixed; /* Establece la posición de la barra lateral como fija */
+    margin: 0; /* Establece el margen exterior de la barra lateral a 0 */
+    top: 0; /* Establece la posición superior de la barra lateral en la parte superior de la ventana */
+    left: 0; /* Establece la posición izquierda de la barra lateral en el borde izquierdo de la ventana */
+  }
+  
+  /* Estilos para el logotipo en la barra lateral */
+  .logo {
+    padding: 20px; /* Establece el relleno interno del logotipo a 20px */
+    font-size: 24px; /* Establece el tamaño de fuente del logotipo a 24px */
+    font-weight: bold; /* Establece el peso de fuente del logotipo a negrita */
+    background-color: #0f49c7; /* Establece el color de fondo del logotipo a #0f49c7 */
+    margin-top: 0; /* Establece el margen superior del logotipo a 0 */
+    margin-bottom: 0; /* Establece el margen inferior del logotipo a 0 */
+    border-top: 4px solid transparent; /* Establece un borde superior transparente de 4px en el logotipo */
+  }
+  
+  /* Estilos para la lista de elementos de menú en la barra lateral */
+  .menu ul {
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    padding: 0; /* Establece el relleno interior de la lista a 0 */
+    margin: 0; /* Establece el margen exterior de la lista a 0 */
+  }
+  
+  /* Estilos para cada elemento de menú en la barra lateral */
+  .menu li {
+    padding: 10px; /* Establece el relleno interno de cada elemento de menú a 10px */
+  }
+  
+  /* Estilos para los enlaces de menú en la barra lateral */
+  .menu li a {
+    color: #fff; /* Establece el color de texto de los enlaces a blanco */
+    text-decoration: none; /* Elimina la decoración de texto de los enlaces */
+    display: flex; /* Establece la visualización de los enlaces como flex */
+    align-items: center; /* Centra verticalmente los elementos dentro de los enlaces */
+  }
+  
+  /* Estilos para los iconos en los enlaces de menú en la barra lateral */
+  .menu li a i {
+    margin-right: 10px; /* Establece el margen derecho de los iconos a 10px */
+  }
+  
+  /* Estilos al pasar el cursor sobre un elemento de menú en la barra lateral */
+  .menu li:hover {
+    background-color: #093875; /* Cambia el color de fondo al pasar el cursor sobre un elemento de menú */
+  }
+  
+  /* Estilos al pasar el cursor sobre un enlace de menú en la barra lateral */
+  .menu li:hover a {
+    color: #f8f8f8; /* Cambia el color de texto al pasar el cursor sobre un enlace de menú */
+  }
+  
+  /* Estilos para el contenido principal */
+  .content {
+    margin-left: 200px; /* Establece el margen izquierdo del contenido principal a 200px */
+    padding: 20px; /* Establece el relleno interno del contenido principal a 20px */
+    color: #fff; /* Establece el color de texto del contenido principal a blanco */
+  }
+  

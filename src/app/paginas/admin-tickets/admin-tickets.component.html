@@ -1,0 +1,28 @@
+<p class="admin-text">admin-tickets works!</p>
+
+<!-- Iterar sobre la lista de eventos utilizando la directiva *ngFor -->
+<div *ngFor="let event of events" class="event-container">
+  <!-- Mostrar el título del evento utilizando la clase .event-title -->
+  <h2 class="event-title">{{ event.nombre }}</h2>
+  <!-- Mostrar la fecha y hora del evento formateada utilizando la clase .event-date -->
+  <p class="event-date">{{ event.fechaHora | date }}</p>
+  <!-- Mostrar la ubicación del evento utilizando la clase .event-location -->
+  <p class="event-location">{{ event.pais }}, {{ event.ciudad }}</p>
+  <!-- Mostrar el artista del evento utilizando la clase .event-artist -->
+  <p class="event-artist">{{ event.artista }}</p>
+  <!-- Mostrar la categoría del evento utilizando la clase .event-category -->
+  <p class="event-category">{{ event.categoria }}</p>
+  <!-- Botón para añadir un ticket al evento, utilizando la clase .add-ticket-button -->
+  <button (click)="showTicketForm(event)" class="add-ticket-button">Añadir Ticket</button>
+
+  <!-- Mostrar el formulario para añadir un ticket si el atributo 'showForm' del evento es verdadero -->
+  <div *ngIf="event.showForm" class="ticket-form">
+    <!-- Formulario con controles para el precio y tipo del ticket, utilizando la clase .form-input -->
+    <form [formGroup]="miFormulario" (submit)="createTicket(event)">
+      <input type="number" formControlName="precio" placeholder="Precio" class="form-input">
+      <input type="text" formControlName="tipo" placeholder="Tipo" class="form-input">
+      <!-- Botón para guardar el ticket, utilizando la clase .form-submit-button -->
+      <button type="submit" class="form-submit-button">Guardar</button>
+    </form>
+  </div>
+</div>

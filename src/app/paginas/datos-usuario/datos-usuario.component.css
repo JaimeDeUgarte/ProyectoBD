@@ -1,0 +1,53 @@
+.profile-img {
+    width: 200px; /* Ancho de la imagen de perfil */
+    height: 200px; /* Altura de la imagen de perfil */
+    border-radius: 50%; /* Borde redondeado para crear una forma circular */
+    object-fit: cover; /* Ajuste de la imagen para que cubra completamente el contenedor sin distorsionarla */
+  }
+  
+  body {
+    display: flex; /* Uso de un contenedor flexible para alinear verticalmente los elementos hijos */
+    justify-content: center; /* Centrar horizontalmente los elementos hijos dentro del contenedor flexible */
+    align-items: center; /* Centrar verticalmente los elementos hijos dentro del contenedor flexible */
+    height: 100vh; /* Establecer la altura del cuerpo igual al 100% del viewport (altura visible) */
+  }
+  
+  .container {
+    text-align: center; /* Centrar el texto en el contenedor */
+    display: flex; /* Uso de un contenedor flexible para alinear verticalmente los elementos hijos */
+    flex-direction: column; /* Apilar los elementos hijos en una columna vertical */
+    align-items: center; /* Centrar verticalmente los elementos hijos dentro del contenedor flexible */
+  }
+  
+  .profile-section,
+  .data-section {
+    margin-bottom: 10px; /* Margen inferior de 10 píxeles para las secciones de perfil y datos */
+  }
+  
+  .data-section input[type="text"] {
+    padding: 5px; /* Espaciado interno de 5 píxeles para los campos de entrada de texto */
+    border: 1px solid #ccc; /* Borde de 1 píxel sólido con color #ccc (gris claro) */
+    border-radius: 5px; /* Borde redondeado de 5 píxeles para los campos de entrada de texto */
+    width: 200px; /* Ancho de los campos de entrada de texto */
+  }
+  
+  .button {
+    background-color: blue; /* Color de fondo azul para el botón */
+    color: white; /* Color de texto blanco para el botón */
+    padding: 5px 10px; /* Espaciado interno de 5 píxeles en vertical y 10 píxeles en horizontal para el botón */
+    border: none; /* Sin borde para el botón */
+    border-radius: 5px; /* Borde redondeado de 5 píxeles para el botón */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+  }
+  
+  .button:hover {
+    background-color: darkblue; /* Color de fondo azul oscuro al pasar el cursor sobre el botón */
+  }
+  
+  .container {
+    text-align: center; /* Centrar el texto en el contenedor */
+    display: flex; /* Uso de un contenedor flexible para alinear verticalmente los elementos hijos */
+    flex-direction: column; /* Apilar los elementos hijos en una columna vertical */
+    align-items: center; /* Centrar verticalmente los elementos hijos dentro del contenedor flexible */
+  }
+  

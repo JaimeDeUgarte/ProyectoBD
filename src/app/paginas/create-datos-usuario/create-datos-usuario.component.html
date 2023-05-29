@@ -1,0 +1,62 @@
+<!-- Muestra el mensaje "create-datos-usuario works!" -->
+<p class="create-message">create-datos-usuario works!</p>
+
+<!-- Sección de perfil -->
+<div class="profile-section">
+  <!-- Imagen de perfil -->
+  <div class="profile-pic">
+    <img src="{{ profilePic }}" alt="Profile Picture" />
+  </div>
+
+  <!-- Opciones de imagen de perfil -->
+  <div class="profile-pic-options">
+    <!-- Itera sobre las opciones de imagen y muestra cada una -->
+    <div *ngFor="let option of profilePicOptions" (click)="changeProfilePic(option)">
+      <img src="{{ option }}" alt="Profile Picture Option" />
+    </div>
+  </div>
+</div>
+
+<!-- Contenedor de registro -->
+<div class="signup-container">
+  <!-- Título del formulario de registro -->
+  <h1>Registrar datos</h1>
+
+  <!-- Formulario de registro -->
+  <form [formGroup]="miFormulario" (ngSubmit)="submitForm()">
+    <!-- Campo de texto para el nombre de usuario -->
+    <div class="form-group">
+      <label for="nombre_u">Nombre de usuario</label>
+      <input type="text" id="nombre_u" formControlName="nombre_u" required>
+    </div>
+
+    <!-- Campo de texto para el nombre completo -->
+    <div class="form-group">
+      <label for="nombre_com">Nombre completo</label>
+      <input type="text" id="nombre_com" formControlName="nombre_com" required>
+    </div>
+
+    <!-- Campo de texto para la fecha de nacimiento -->
+    <div class="form-group">
+      <label for="Fecha_N">Fecha de nacimiento</label>
+      <input type="date" id="Fecha_N" formControlName="Fecha_N" required>
+    </div>
+
+    <!-- Campo de texto para el CI -->
+    <div class="form-group">
+      <label for="ci">CI</label>
+      <input type="text" id="ci" formControlName="ci" required>
+    </div>
+
+    <!-- Botón de enviar el formulario -->
+    <div class="submit-wrapper">
+      <button type="submit" [disabled]="!miFormulario.valid || isLoading">Registrar datos</button>
+    </div>
+
+    <!-- Mensaje de "Cargando..." si isLoading es verdadero -->
+    <p *ngIf="isLoading">Cargando...</p>
+
+    <!-- Mensaje de "Datos registrados exitosamente." si isSuccess es verdadero -->
+    <p *ngIf="isSuccess">Datos registrados exitosamente.</p>
+  </form>
+</div>

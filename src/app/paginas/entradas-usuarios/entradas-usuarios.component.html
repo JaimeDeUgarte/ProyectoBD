@@ -1,0 +1,25 @@
+<body>
+    <div class="container">
+      <h2>Tus boletos</h2> <!-- Encabezado principal -->
+      <div *ngFor="let item of ticketItems; let i = index" class="ticket-item">
+        <!-- Iteración sobre los elementos de ticketItems -->
+        <h3>{{ item.nombre }}</h3> <!-- Título del boleto -->
+        <p class="ticket-info">Fecha y hora: {{ item.fechaHora }}</p> <!-- Información de fecha y hora -->
+        <p class="ticket-info">País: {{ item.pais }}</p> <!-- Información de país -->
+        <p class="ticket-info">Ciudad: {{ item.ciudad }}</p> <!-- Información de ciudad -->
+        <p class="ticket-info">Lugar: {{ item.lugar }}</p> <!-- Información de lugar -->
+        <ng-container *ngIf="item.equipo1 && item.equipo2">
+          <!-- Comprobación si hay equipos para mostrar -->
+          <p class="ticket-info">Local: {{ item.equipo1 }}</p> <!-- Información de equipo local -->
+          <p class="ticket-info">Visitante: {{ item.equipo2 }}</p> <!-- Información de equipo visitante -->
+        </ng-container>
+        <ng-container *ngIf="item.artista">
+          <!-- Comprobación si hay artista para mostrar -->
+          <p class="ticket-info">Artista: {{ item.artista }}</p> <!-- Información de artista -->
+        </ng-container>
+        <p class="ticket-price">Precio: {{ ticketItems1[i]?.precio }}</p> <!-- Información de precio -->
+        <p class="ticket-type">Tipo: {{ ticketItems1[i]?.tipo }}</p> <!-- Información de tipo de boleto -->
+      </div>
+    </div>
+  </body>
+  

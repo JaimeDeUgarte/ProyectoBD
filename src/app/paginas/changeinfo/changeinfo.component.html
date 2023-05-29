@@ -1,0 +1,53 @@
+<!-- La siguiente sección muestra la sección de perfil del usuario -->
+<div class="profile-section">
+    <div class="profile-pic">
+      <!-- La imagen del perfil del usuario se carga dinámicamente usando la propiedad "profilePic" -->
+      <img [src]="profilePic" alt="Profile Picture" />
+    </div>
+    <div class="profile-pic-options">
+      <!-- Se muestra una lista de opciones de imágenes de perfil disponibles -->
+      <div *ngFor="let option of profilePicOptions" (click)="changeProfilePic(option)">
+        <!-- Cada opción de imagen de perfil se carga dinámicamente usando la propiedad "option" -->
+        <img [src]="option" alt="Profile Picture Option" />
+      </div>
+    </div>
+  </div>
+  
+  <!-- El siguiente contenedor representa el formulario de modificación de datos -->
+  <div class="signup-container">
+    <h1>Modificar datos</h1>
+  
+    <!-- El formulario se enlaza a la instancia "miFormulario" y se activa el evento "ngSubmit" cuando se envía -->
+    <form [formGroup]="miFormulario" (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="nombre_u">Nombre de usuario</label>
+        <!-- Se utiliza un campo de entrada de texto para capturar el nombre de usuario -->
+        <input type="text" id="nombre_u" formControlName="nombre_u" required>
+      </div>
+      <div class="form-group">
+        <label for="nombre_com">Nombre completo</label>
+        <!-- Se utiliza un campo de entrada de texto para capturar el nombre completo -->
+        <input type="text" id="nombre_com" formControlName="nombre_com" required>
+      </div>
+      <div class="form-group">
+        <label for="Fecha_N">Fecha de nacimiento</label>
+        <!-- Se utiliza un campo de entrada de fecha para capturar la fecha de nacimiento -->
+        <input type="date" id="Fecha_N" formControlName="Fecha_N" required>
+      </div>
+      <div class="form-group">
+        <label for="ci">CI</label>
+        <!-- Se utiliza un campo de entrada de texto para capturar el número de cédula de identidad -->
+        <input type="text" id="ci" formControlName="ci" required>
+      </div>
+  
+      <div class="submit-wrapper">
+        <!-- El botón "Guardar cambios" se habilita/deshabilita según la validez del formulario y el estado de carga -->
+        <button type="submit" [disabled]="!miFormulario.valid || isLoading">Guardar cambios</button>
+      </div>
+      <!-- Se muestra un mensaje de "Cargando..." cuando se está procesando el formulario -->
+      <p *ngIf="isLoading">Cargando...</p>
+      <!-- Se muestra un mensaje de éxito cuando los datos se modifican correctamente -->
+      <p *ngIf="isSuccess">Datos modificados exitosamente.</p>
+    </form>
+  </div>
+  

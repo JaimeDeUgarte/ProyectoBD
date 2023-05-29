@@ -1,0 +1,61 @@
+<p>create-event works!</p> <!-- Un párrafo que muestra un mensaje de prueba -->
+
+<form [formGroup]="miFormulario" (ngSubmit)="onSubmit()"> <!-- Inicio del formulario -->
+  <div>
+    <label for="categoria">Categoría:</label> <!-- Etiqueta para el campo de selección de categoría -->
+    <select formControlName="categoria" id="categoria"> <!-- Campo de selección de categoría -->
+      <option value="Convencion">Convencion</option> <!-- Opción de categoría: Convencion -->
+      <option value="Musica">Musica</option> <!-- Opción de categoría: Musica -->
+      <option value="Deportes">Deportes</option> <!-- Opción de categoría: Deportes -->
+    </select>
+  </div>
+
+  <div>
+    <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo de entrada de nombre -->
+    <input type="text" formControlName="nombre" id="nombre"> <!-- Campo de entrada de nombre -->
+  </div>
+
+  <div>
+    <label for="fechaHora">Fecha y Hora:</label> <!-- Etiqueta para el campo de entrada de fecha y hora -->
+    <input type="datetime-local" formControlName="fechaHora" id="fechaHora"> <!-- Campo de entrada de fecha y hora -->
+  </div>
+
+  <div>
+    <label for="pais">País:</label> <!-- Etiqueta para el campo de entrada de país -->
+    <input type="text" formControlName="pais" id="pais"> <!-- Campo de entrada de país -->
+  </div>
+
+  <div>
+    <label for="ciudad">Ciudad:</label> <!-- Etiqueta para el campo de entrada de ciudad -->
+    <input type="text" formControlName="ciudad" id="ciudad"> <!-- Campo de entrada de ciudad -->
+  </div>
+
+  <div>
+    <label for="lugar">Lugar:</label> <!-- Etiqueta para el campo de entrada de lugar -->
+    <input type="text" formControlName="lugar" id="lugar"> <!-- Campo de entrada de lugar -->
+  </div>
+
+  <div *ngIf="miFormulario.get('categoria')?.value === 'Musica'"> <!-- Condición: si la categoría seleccionada es 'Musica' -->
+    <label for="artista">Artista:</label> <!-- Etiqueta para el campo de entrada de artista -->
+    <input type="text" formControlName="artista" id="artista"> <!-- Campo de entrada de artista -->
+  </div>
+
+  <div *ngIf="miFormulario.get('categoria')?.value === 'Deportes'"> <!-- Condición: si la categoría seleccionada es 'Deportes' -->
+    <label for="equipo1">Equipo Local:</label> <!-- Etiqueta para el campo de entrada de equipo local -->
+    <input type="text" formControlName="equipo1" id="equipo1"> <!-- Campo de entrada de equipo local -->
+
+    <label for="equipo2">Equipo Visitante:</label> <!-- Etiqueta para el campo de entrada de equipo visitante -->
+    <input type="text" formControlName="equipo2" id="equipo2"> <!-- Campo de entrada de equipo visitante -->
+  </div>
+
+  <div class="submit-wrapper">
+    <button [disabled]="isLoading || isSuccess" type="submit"> <!-- Botón para enviar el formulario -->
+      <span *ngIf="!isLoading && !isSuccess">Enviar</span> <!-- Texto "Enviar" cuando no hay carga ni éxito -->
+      <span *ngIf="isLoading"><i class="fa fa-spinner fa-spin"></i></span> <!-- Ícono de carga mientras se envía el formulario -->
+      <span *ngIf="isSuccess"><i class="fa fa-check"></i></span> <!-- Ícono de éxito cuando el formulario se envía correctamente -->
+    </button>
+  </div>
+  <div class="submit-wrapper" style="margin-top: 10px;">
+    <button type="button" (click)="reloadPage()">Recargar</button> <!-- Botón para recargar la página -->
+  </div>
+</form> <!-- Fin del formulario -->

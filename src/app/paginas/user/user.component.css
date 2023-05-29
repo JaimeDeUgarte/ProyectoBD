@@ -1,0 +1,91 @@
+body {
+    background-color: #f0f0f0; /* Color de fondo del cuerpo */
+    color: #000 !important; /* Color de texto del cuerpo */
+    font-family: Arial, sans-serif; /* Fuente del texto del cuerpo */
+  }
+  
+  .user-list {
+    margin-bottom: 20px; /* Margen inferior de la lista de usuarios */
+  }
+  
+  .user-list h2 {
+    font-size: 24px; /* Tamaño de fuente del título de la lista de usuarios */
+    margin-bottom: 10px; /* Margen inferior del título de la lista de usuarios */
+    color: #000 !important; /* Color de texto del título de la lista de usuarios */
+  }
+  
+  .user-list ul {
+    list-style: none; /* Eliminar viñetas de la lista de usuarios */
+    padding: 0; /* Eliminar el relleno de la lista de usuarios */
+  }
+  
+  .user-list li {
+    margin-bottom: 5px; /* Margen inferior de cada elemento de la lista de usuarios */
+  }
+  
+  .user-list button {
+    background-color: #fff; /* Color de fondo del botón de la lista de usuarios */
+    border: 1px solid #ccc; /* Borde del botón de la lista de usuarios */
+    border-radius: 3px; /* Radio de borde del botón de la lista de usuarios */
+    color: #000 !important; /* Color de texto del botón de la lista de usuarios */
+    padding: 5px 10px; /* Relleno del botón de la lista de usuarios */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima del botón de la lista de usuarios */
+  }
+  
+  .user-list button:hover {
+    background-color: #e0e0e0; /* Color de fondo del botón de la lista de usuarios al pasar el cursor por encima */
+  }
+  
+  .user-details {
+    background-color: #fff; /* Color de fondo de los detalles del usuario */
+    padding: 20px; /* Relleno de los detalles del usuario */
+    border-radius: 5px; /* Radio de borde de los detalles del usuario */
+  }
+  
+  .user-details h2 {
+    font-size: 24px; /* Tamaño de fuente del título de los detalles del usuario */
+    margin-bottom: 10px; /* Margen inferior del título de los detalles del usuario */
+    color: #000 !important; /* Color de texto del título de los detalles del usuario */
+  }
+  
+  .user-details .form-group {
+    margin-bottom: 10px; /* Margen inferior del grupo de formulario de los detalles del usuario */
+  }
+  
+  .user-details label {
+    display: block; /* Mostrar el label en bloque */
+    font-weight: bold; /* Peso de fuente en negrita del label de los detalles del usuario */
+    color: #000 !important; /* Color de texto del label de los detalles del usuario */
+  }
+  
+  .user-details input[type="text"],
+  .user-details input[type="password"] {
+    width: 100%; /* Ancho completo de los campos de entrada de texto */
+    padding: 5px; /* Relleno de los campos de entrada de texto */
+    border: 1px solid #ccc; /* Borde de los campos de entrada de texto */
+    border-radius: 3px; /* Radio de borde de los campos de entrada de texto */
+    color: #000 !important; /* Color de texto de los campos de entrada de texto */
+  }
+  
+  .user-details .buttons {
+    margin-top: 20px; /* Margen superior de los botones de los detalles del usuario */
+  }
+  
+  .user-details button {
+    background-color: #f44336; /* Color de fondo del botón de los detalles del usuario */
+    border: none; /* Eliminar el borde del botón de los detalles del usuario */
+    border-radius: 3px; /* Radio de borde del botón de los detalles del usuario */
+    color: #eceaea !important; /* Color de texto del botón de los detalles del usuario */
+    padding: 10px 20px; /* Relleno del botón de los detalles del usuario */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima del botón de los detalles del usuario */
+    margin-right: 10px; /* Margen derecho de los botones de los detalles del usuario */
+  }
+  
+  .user-details button:last-child {
+    background-color: #4caf50; /* Color de fondo del último botón de los detalles del usuario */
+  }
+  
+  .user-details button:hover {
+    opacity: 0.8; /* Opacidad del botón de los detalles del usuario al pasar el cursor por encima */
+  }
+  

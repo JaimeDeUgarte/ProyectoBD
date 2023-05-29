@@ -1,0 +1,121 @@
+.container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente el contenedor */
+    padding: 20px; /* Espaciado interno del contenedor */
+    background-color: #f4f4f4; /* Color de fondo del contenedor */
+    border-radius: 8px; /* Radio de borde del contenedor */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+  }
+  
+  .buy-button-container {
+    display: flex; /* Mostrar los elementos en línea en un contenedor flexible */
+    justify-content: flex-end; /* Alinear los elementos al final del contenedor */
+  }
+  
+  .buttons {
+    display: flex; /* Mostrar los elementos en línea en un contenedor flexible */
+    justify-content: space-between; /* Distribuir el espacio disponible entre los elementos */
+    margin-bottom: 20px; /* Margen inferior del contenedor */
+  }
+  
+  h2 {
+    font-size: 24px; /* Tamaño de fuente del encabezado */
+    margin-bottom: 10px; /* Margen inferior del encabezado */
+  }
+  
+  .event-list {
+    list-style: none; /* Eliminar la viñeta de la lista */
+    padding: 0; /* Eliminar el espacio interno de la lista */
+    margin: 0; /* Eliminar el espacio externo de la lista */
+  }
+  
+  .event-item {
+    margin-bottom: 20px; /* Margen inferior del elemento de la lista */
+    padding: 20px; /* Espaciado interno del elemento de la lista */
+    background-color: #fff; /* Color de fondo del elemento de la lista */
+    border-radius: 8px; /* Radio de borde del elemento de la lista */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra del elemento de la lista */
+  }
+  
+  h3 {
+    font-size: 20px; /* Tamaño de fuente del encabezado */
+    margin-bottom: 5px; /* Margen inferior del encabezado */
+  }
+  
+  p {
+    margin-bottom: 10px; /* Margen inferior del párrafo */
+  }
+  
+  .tickets-container {
+    margin-top: 20px; /* Margen superior del contenedor */
+    padding-top: 20px; /* Espaciado interno superior del contenedor */
+    border-top: 1px solid #ddd; /* Borde superior del contenedor */
+  }
+  
+  .ticket-list {
+    list-style: none; /* Eliminar la viñeta de la lista */
+    padding: 0; /* Eliminar el espacio interno de la lista */
+    margin: 0; /* Eliminar el espacio externo de la lista */
+  }
+  
+  .ticket-item {
+    margin-bottom: 10px; /* Margen inferior del elemento de la lista de tickets */
+    padding: 10px; /* Espaciado interno del elemento de la lista de tickets */
+    background-color: #f9f9f9; /* Color de fondo del elemento de la lista de tickets */
+    border-radius: 4px; /* Radio de borde del elemento de la lista de tickets */
+  }
+  
+  .success-message {
+    color: green; /* Color del mensaje de éxito */
+    font-weight: bold; /* Grosor de fuente del mensaje de éxito */
+  }
+  
+  button {
+    appearance: none; /* Deshabilitar la apariencia predeterminada del botón */
+    background-color: transparent; /* Color de fondo transparente */
+    border: 0.125em solid #000000; /* Borde del botón */
+    border-radius: 0.9375em; /* Radio de borde del botón */
+    box-sizing: border-box; /* Incluir el borde en el tamaño total del botón */
+    color: #161616; /* Color del texto del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima del botón */
+    display: inline-block; /* Mostrar el botón como un elemento en línea */
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Fuente del botón */
+    font-size: 12px; /* Tamaño de fuente del botón */
+    font-weight: 600; /* Grosor de fuente del botón */
+    line-height: normal; /* Altura de línea normal del botón */
+    margin: 0; /* Margen del botón */
+    min-height: 3.75em; /* Altura mínima del botón */
+    min-width: 0; /* Ancho mínimo del botón */
+    outline: none; /* Eliminar el contorno al hacer clic en el botón */
+    padding: 1em 2.3em; /* Espaciado interno del botón */
+    text-align: center; /* Alinear el texto al centro del botón */
+    text-decoration: none; /* Eliminar la decoración de texto del botón */
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1); /* Transición animada del botón */
+    user-select: none; /* Evitar la selección de texto al hacer clic en el botón */
+    -webkit-user-select: none; /* Evitar la selección de texto en navegadores webkit */
+    touch-action: manipulation; /* Propiedad táctil del botón */
+    will-change: transform; /* Optimización de animación del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima del botón */
+  }
+  
+  button:disabled {
+    pointer-events: none; /* Deshabilitar eventos de puntero en botones deshabilitados */
+  }
+  
+  button:hover {
+    color: #fff; /* Color del texto del botón al pasar el cursor */
+    background-color: #1A1A1A; /* Color de fondo del botón al pasar el cursor */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; /* Sombra del botón al pasar el cursor */
+    transform: translateY(-2px); /* Desplazamiento vertical del botón al pasar el cursor */
+  }
+  
+  button:active {
+    box-shadow: none; /* Eliminar la sombra del botón al hacer clic */
+    transform: translateY(0); /* Restablecer el desplazamiento vertical del botón al hacer clic */
+  }
+  
+  a {
+    color: #fff; /* Color del enlace */
+    text-decoration: none; /* Eliminar la decoración de texto del enlace */
+  }
+  

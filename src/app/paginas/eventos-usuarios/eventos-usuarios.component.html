@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="buttons">
+      <button (click)="getEvents()">Principal</button> <!-- Botón para mostrar todos los eventos -->
+      <button (click)="getEvents('Musica')">Musica</button> <!-- Botón para mostrar eventos de música -->
+      <button (click)="getEvents('Deportes')">Deportes</button> <!-- Botón para mostrar eventos deportivos -->
+      <button (click)="getEvents('Convencion')">Convencion</button> <!-- Botón para mostrar eventos de convención -->
+    </div>
+    <h2>Eventos:</h2> <!-- Encabezado de la sección de eventos -->
+    <div>
+      <h2>Carrito de compras</h2> <!-- Encabezado del carrito de compras -->
+      <div *ngFor="let item of cartItems"> <!-- Iteración sobre los elementos del carrito -->
+        <h3>{{ item.tipo }}</h3> <!-- Muestra el tipo del elemento del carrito -->
+        <p>Precio: {{ item.precio }}</p> <!-- Muestra el precio del elemento del carrito -->
+        <button (click)="removeCartItem(item.ticketID)">Eliminar</button> <!-- Botón para eliminar un elemento del carrito -->
+      </div>
+      <div class="buy-button-container"> <!-- Contenedor para el botón de compra -->
+        <button (click)="checkout()">Comprar</button> <!-- Botón para realizar la compra -->
+      </div>
+    </div>
+  
+    <ul class="event-list"> <!-- Lista de eventos -->
+      <li *ngFor="let event of events" class="event-item"> <!-- Iteración sobre los eventos -->
+        <h3>{{ event.nombre }}</h3> <!-- Muestra el nombre del evento -->
+        <p>{{ event.fechaHora }}</p> <!-- Muestra la fecha y hora del evento -->
+        <button (click)="showTickets(event)">Show Tickets</button> <!-- Botón para mostrar los tickets disponibles del evento -->
+        <div *ngIf="selectedEventId === event.cod_E" class="tickets-container"> <!-- Contenedor para los tickets disponibles -->
+          <h4>Tickets Disponibles:</h4> <!-- Encabezado de los tickets disponibles -->
+          <ul class="ticket-list"> <!-- Lista de tickets -->
+            <li *ngFor="let ticket of ticketsAvailable" class="ticket-item"> <!-- Iteración sobre los tickets disponibles -->
+              <p>Tipo: {{ ticket.tipo }}</p> <!-- Muestra el tipo del ticket -->
+              <p>Precio: {{ ticket.precio }}</p> <!-- Muestra el precio del ticket -->
+              <button (click)="buyTicket(ticket); ticketAddedToCart = ticket._id">Comprar Ticket</button> <!-- Botón para comprar el ticket -->
+              <span *ngIf="ticketAddedToCart === ticket._id" class="success-message">Añadido al carrito</span> <!-- Mensaje de éxito cuando se añade el ticket al carrito -->
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  

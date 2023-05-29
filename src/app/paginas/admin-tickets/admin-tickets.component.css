@@ -1,0 +1,69 @@
+.admin-text {
+    color: black; /* Color de texto negro para el elemento con la clase .admin-text */
+  }
+  
+  .event-container {
+    margin-bottom: 20px; /* Margen inferior de 20px para el elemento con la clase .event-container */
+  }
+  
+  .event-title {
+    color: black; /* Color de texto negro para el elemento con la clase .event-title */
+    font-size: 24px; /* Tamaño de fuente de 24px para el elemento con la clase .event-title */
+    font-weight: bold; /* Negrita para el elemento con la clase .event-title */
+  }
+  
+  .event-date {
+    color: black; /* Color de texto negro para el elemento con la clase .event-date */
+    font-size: 16px; /* Tamaño de fuente de 16px para el elemento con la clase .event-date */
+  }
+  
+  .event-location {
+    color: black; /* Color de texto negro para el elemento con la clase .event-location */
+    font-size: 16px; /* Tamaño de fuente de 16px para el elemento con la clase .event-location */
+  }
+  
+  .event-artist {
+    color: black; /* Color de texto negro para el elemento con la clase .event-artist */
+    font-size: 16px; /* Tamaño de fuente de 16px para el elemento con la clase .event-artist */
+  }
+  
+  .event-category {
+    color: black; /* Color de texto negro para el elemento con la clase .event-category */
+    font-size: 16px; /* Tamaño de fuente de 16px para el elemento con la clase .event-category */
+  }
+  
+  .add-ticket-button {
+    background-color: #4CAF50; /* Color de fondo verde para el botón con la clase .add-ticket-button */
+    border: none; /* Sin borde para el botón */
+    color: white; /* Color de texto blanco para el botón */
+    padding: 10px 20px; /* Espaciado interno de 10px en la parte superior e inferior, y 20px en los lados del botón */
+    text-align: center; /* Alineación del texto al centro del botón */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Mostrar como un elemento en línea */
+    font-size: 16px; /* Tamaño de fuente de 16px para el botón */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima del botón */
+    border-radius: 4px; /* Borde redondeado de 4px para el botón */
+  }
+  
+  .ticket-form {
+    margin-top: 10px; /* Margen superior de 10px para el elemento con la clase .ticket-form */
+  }
+  
+  .form-input {
+    padding: 5px; /* Espaciado interno de 5px para los elementos de entrada del formulario con la clase .form-input */
+    margin-right: 10px; /* Margen derecho de 10px para los elementos de entrada del formulario con la clase .form-input */
+  }
+  
+  .form-submit-button {
+    background-color: #4CAF50; /* Color de fondo verde para el botón de envío del formulario con la clase .form-submit-button */
+    border: none; /* Sin borde para el botón */
+    color: white; /* Color de texto blanco para el botón */
+    padding: 5px 10px; /* Espaciado interno de 5px en la parte superior e inferior, y 10px en los lados del botón */
+    text-align: center; /* Alineación del texto al centro del botón */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Mostrar como un elemento en línea */
+    font-size: 14px; /* Tamaño de fuente de 14px para el botón */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima del botón */
+    border-radius: 4px; /* Borde redondeado de 4px para el botón */
+  }
+  

@@ -1,0 +1,21 @@
+<head>
+    <title>TicketMania - Administrador</title> <!-- Título de la página -->
+    <link rel="stylesheet" type="text/css" href="hadmin.component.css"> <!-- Enlace al archivo de estilos CSS -->
+  </head>
+  <body>
+    <div class="sidebar"> <!-- Barra lateral -->
+      <div class="logo">TicketMania</div> <!-- Logotipo -->
+      <div class="menu"> <!-- Menú -->
+        <ul> <!-- Lista de elementos de menú -->
+          <li><a [routerLink]="'/admin/madmins'">Admins</a></li> <!-- Elemento de menú "Admins" -->
+          <li><a [routerLink]="'/admin/user'">Users</a></li> <!-- Elemento de menú "Users" -->
+          <li><a [routerLink]="'/admin/cevent'">Events</a></li> <!-- Elemento de menú "Events" -->
+          <li><a [routerLink]="'/admin/tickets'">Tickets</a></li> <!-- Elemento de menú "Tickets" -->
+        </ul>
+      </div>
+    </div>
+    <div class="content"> <!-- Contenido principal -->
+      <router-outlet></router-outlet> <!-- Enrutador de componentes -->
+    </div>
+  </body>
+  

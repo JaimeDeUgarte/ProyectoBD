@@ -1,0 +1,161 @@
+.profile-section {
+    text-align: center; /* Centra el contenido del perfil */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20 píxeles */
+  }
+  
+  .profile-pic img {
+    width: 150px; /* Establece el ancho de la imagen del perfil en 150 píxeles */
+    height: 150px; /* Establece la altura de la imagen del perfil en 150 píxeles */
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el espacio disponible */
+    border-radius: 50%; /* Agrega bordes redondeados al perfil */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave a la imagen del perfil */
+  }
+  
+  .profile-pic-options {
+    display: flex; /* Utiliza el modelo flexbox para los elementos internos */
+    justify-content: center; /* Centra horizontalmente las opciones de imagen del perfil */
+    margin-top: 10px; /* Agrega un margen superior de 10 píxeles */
+  }
+  
+  .profile-pic-options div {
+    margin: 0 5px; /* Agrega un margen horizontal de 5 píxeles a los elementos div */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa el mouse sobre ellos */
+  }
+  
+  .signup-container {
+    max-width: 600px; /* Establece el ancho máximo del contenedor de registro en 600 píxeles */
+    margin: 0 auto; /* Centra el contenedor horizontalmente utilizando márgenes automáticos */
+    padding: 20px; /* Agrega un relleno interno de 20 píxeles al contenedor */
+    background-color: #2533af; /* Establece el color de fondo del contenedor en azul oscuro */
+    border-radius: 5px; /* Agrega bordes redondeados al contenedor */
+  }
+  
+  .signup-container h1 {
+    text-align: center; /* Centra horizontalmente el texto del encabezado h1 */
+    font-size: 24px; /* Establece el tamaño de fuente del encabezado h1 en 24 píxeles */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20 píxeles al encabezado h1 */
+    color: #fff; /* Establece el color del texto del encabezado h1 en blanco */
+  }
+  
+  .signup-container form label {
+    display: block; /* Establece las etiquetas de formulario como elementos de bloque */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10 píxeles a las etiquetas de formulario */
+    color: #fff; /* Establece el color del texto de las etiquetas de formulario en blanco */
+  }
+  
+  .signup-container form input[type="text"],
+  .signup-container form input[type="password"],
+  .form-group input[type="text"],
+  .form-group input[type="date"] {
+    width: 100%; /* Establece el ancho de los campos de entrada de texto al 100% */
+    padding: 8px; /* Agrega un relleno interno de 8 píxeles a los campos de entrada de texto */
+    border: 1px solid #ccc; /* Agrega un borde de 1 píxel sólido con un color gris claro */
+    border-radius: 4px; /* Agrega bordes redondeados a los campos de entrada de texto */
+  }
+  
+  .signup-container form .submit-wrapper,
+  .form-group {
+    text-align: center; /* Centra horizontalmente los elementos dentro de .submit-wrapper y .form-group */
+    margin-top: 20px; /* Agrega un margen superior de 20 píxeles a .submit-wrapper y .form-group */
+  }
+  
+  .signup-container form button,
+  button {
+    padding: 10px 20px; /* Agrega un relleno de 10 píxeles vertical y 20 píxeles horizontal a los botones */
+    background-color: #4CAF50; /* Establece el color de fondo de los botones en verde */
+    color: #fff; /* Establece el color del texto de los botones en blanco */
+    border: none; /* Elimina los bordes de los botones */
+    border-radius: 4px; /* Agrega bordes redondeados a los botones */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa el mouse sobre los botones */
+  }
+  
+  .signup-container form button[disabled],
+  button:disabled {
+    opacity: 0.6; /* Reduce la opacidad de los botones desactivados a 0.6 */
+    cursor: not-allowed; /* Cambia el cursor a un círculo con diagonal cuando se pasa el mouse sobre los botones desactivados */
+  }
+  
+  .signup-container form .fa {
+    margin-right: 5px; /* Agrega un margen derecho de 5 píxeles a los iconos con clase .fa */
+  }
+  
+  .signup-container form .fa-spin {
+    animation: fa-spin 2s infinite linear; /* Aplica una animación de rotación infinita a los iconos con clase .fa-spin */
+  }
+  
+  @keyframes fa-spin {
+    0% {
+      transform: rotate(0deg); /* Define la rotación inicial de 0 grados para los iconos con clase .fa-spin */
+    }
+    100% {
+      transform: rotate(360deg); /* Define la rotación final de 360 grados para los iconos con clase .fa-spin */
+    }
+  }
+  
+  .search-container {
+    margin-bottom: 20px; /* Agrega un margen inferior de 20 píxeles al contenedor de búsqueda */
+  }
+  
+  .search-container input {
+    width: 300px; /* Establece el ancho del campo de entrada de búsqueda en 300 píxeles */
+    padding: 10px; /* Agrega un relleno interno de 10 píxeles al campo de entrada de búsqueda */
+    font-size: 16px; /* Establece el tamaño de fuente del campo de entrada de búsqueda en 16 píxeles */
+  }
+  
+  .user-list ul {
+    list-style-type: none; /* Elimina los estilos de viñeta de las listas desordenadas dentro de .user-list */
+    padding: 0; /* Elimina el relleno interno de las listas desordenadas dentro de .user-list */
+  }
+  
+  .user-list li {
+    display: flex; /* Utiliza el modelo flexbox para los elementos de lista dentro de .user-list */
+    justify-content: space-between; /* Distribuye uniformemente los elementos de lista dentro de .user-list */
+    align-items: center; /* Centra verticalmente los elementos de lista dentro de .user-list */
+    padding: 10px; /* Agrega un relleno interno de 10 píxeles a los elementos de lista dentro de .user-list */
+    background-color: #333; /* Establece el color de fondo de los elementos de lista dentro de .user-list en negro */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10 píxeles a los elementos de lista dentro de .user-list */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa el mouse sobre los elementos de lista dentro de .user-list */
+    color: #fff; /* Establece el color del texto de los elementos de lista dentro de .user-list en blanco */
+  }
+  
+  .user-actions button {
+    background-color: #555; /* Establece el color de fondo de los botones de acciones de usuario en gris oscuro */
+    color: #fff; /* Establece el color del texto de los botones de acciones de usuario en blanco */
+    padding: 5px 10px; /* Agrega un relleno de 5 píxeles vertical y 10 píxeles horizontal a los botones de acciones de usuario */
+    border: none; /* Elimina los bordes de los botones de acciones de usuario */
+    border-radius: 4px; /* Agrega bordes redondeados a los botones de acciones de usuario */
+    margin-left: 10px; /* Agrega un margen izquierdo de 10 píxeles a los botones de acciones de usuario */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa el mouse sobre los botones de acciones de usuario */
+  }
+  
+  .user-actions button:hover {
+    background-color: #777; /* Cambia el color de fondo de los botones de acciones de usuario a gris más oscuro al pasar el mouse sobre ellos */
+  }
+  
+  form label {
+    display: block; /* Establece las etiquetas de formulario como elementos de bloque */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10 píxeles a las etiquetas de formulario */
+    color: #333; /* Establece el color del texto de las etiquetas de formulario en negro */
+  }
+  
+  form input {
+    padding: 10px; /* Agrega un relleno interno de 10 píxeles a los campos de entrada de formulario */
+    font-size: 16px; /* Establece el tamaño de fuente de los campos de entrada de formulario en 16 píxeles */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10 píxeles a los campos de entrada de formulario */
+  }
+  
+  form button,
+  button[type="submit"] {
+    background-color: #555; /* Establece el color de fondo de los botones de formulario en gris oscuro */
+    color: #fff; /* Establece el color del texto de los botones de formulario en blanco */
+    padding: 10px 20px; /* Agrega un relleno de 10 píxeles vertical y 20 píxeles horizontal a los botones de formulario */
+    border: none; /* Elimina los bordes de los botones de formulario */
+    border-radius: 4px; /* Agrega bordes redondeados a los botones de formulario */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa el mouse sobre los botones de formulario */
+  }
+  
+  form button:hover,
+  button[type="submit"]:hover {
+    background-color: #777; /* Cambia el color de fondo de los botones de formulario a gris más oscuro al pasar el mouse sobre ellos */
+  }
+  
