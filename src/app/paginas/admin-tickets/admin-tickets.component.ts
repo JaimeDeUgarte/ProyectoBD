@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { UserService } from '../../servicio/user-service.service';
+import { UserService } from 'src/app/servicio/user-service.service'; 
 
 @Component({
   selector: 'app-admin-tickets',

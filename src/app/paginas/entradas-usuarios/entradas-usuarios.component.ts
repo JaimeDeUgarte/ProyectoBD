@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../../servicio/user-service.service'; // Importar el servicio UserService
+import { UserService } from 'src/app/servicio/user-service.service';  // Importar el servicio UserService
 import { ActivatedRoute } from '@angular/router'; // Importar la clase ActivatedRoute
 import { Observable } from 'rxjs'; // Importar Observable
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { UserService } from '../../servicio/user-service.service';
+import { UserService } from 'src/app/servicio/user-service.service'; 
 
 @Component({
   selector: 'app-huser',

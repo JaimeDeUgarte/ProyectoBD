@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'; // Importación del decorador Component de Angular
 import { FormGroup, FormControl } from '@angular/forms'; // Importación de los módulos FormGroup y FormControl de Angular Forms
-import { UserService } from '../../servicio/user-service.service'; // Importación del servicio UserService
+import { UserService } from 'src/app/servicio/user-service.service';  // Importación del servicio UserService
 
 @Component({
   selector: 'app-create-event', // Selector del componente
